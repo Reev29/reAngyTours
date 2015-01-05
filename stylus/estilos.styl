@@ -1,0 +1,372 @@
+@import "normalize.styl"
+@import "fonts.styl"
+
+// fuentes disponibles
+// font-family 'angytours-andada bold'
+// font-family 'angytours-andada italic'
+// font-family 'angytours-bariol'
+
+verde_principal = #4c914c
+gris_claro = #e6e6e6
+obscuro = #2a2a2a
+rojo_marron = #ee5625
+obscuro_claro = #323a45
+form_obscuro = #333333
+
+a
+	text-decoration none
+li
+	list-style none
+	display inline-block
+ul
+	margin 0
+	padding 0
+figure
+	margin 0
+
+body
+	font-family 'angytours-bariol'
+	font-size 16px
+		
+.cabecera
+	background-image url(../img/intro.png)
+	background-repeat no-repeat
+	background-size 100% 100%
+	overflow hidden
+	
+.navegacion
+	float right
+	margin-top 2em
+	&-li
+		border-top 5px transparent solid
+		margin-left 0.5em
+		padding 1em 0
+		transition 0.5s border-top
+		-ms-transition 0.5s border-top
+		-o-transition 0.5s border-top
+		-webkit-transition 0.5s border-top
+		-moz-transition 0.5s border-top
+		a
+			color white
+			padding 1em
+			text-transform uppercase		
+		&:hover
+			border-top 5px verde_principal solid
+	.sesion
+		border 1px verde_principal solid
+		border-radius 5px
+		a
+			color verde_principal
+			transition 0.5s border-top
+			-ms-transition 0.5s border-top
+			-o-transition 0.5s border-top
+			-webkit-transition 0.5s border-top
+			-moz-transition 0.5s border-top
+			&:hover
+				background verde_principal
+				border 0px
+				color white
+.welcome
+	font-family 'angytours-andada bold'
+	color white
+	font-size 3em
+	margin-left 1em
+	margin-top 5rem
+	text-transform uppercase
+	&-next
+		font-family 'angytours-andada italic'
+		color white
+		font-size 2em
+		margin-left 1.5em
+		margin-top 4rem
+		text-transform uppercase
+.bottom-intro
+	margin-bottom 1.5em
+	padding-top 1em
+	padding-bottom 2em
+	overflow hidden
+	.registro
+	.caja-deslizar
+		color white
+	.registro
+		background verde_principal
+		border-radius 5px
+		padding 1.5em 6em
+		text-transform uppercase
+		margin-right 2em
+		border 0px
+		float right
+	.caja-deslizar
+		text-align center
+		margin 0 auto		
+		width 200px
+		.scroll
+			font-size .5rem		
+	
+.margen-left
+	margin-left 3em
+.margen-right
+	margin-right 3em
+.izquierda
+	float left
+.derecha
+	float right
+.logo
+	margin-top 2em
+	max-width 12.5em
+.inicio
+	background gris_claro
+	padding-top 2em
+	overflow hidden
+	color obscuro_claro
+.calidad
+	margin-left 2em
+.servicios
+	margin 0 auto
+.satisfaccion
+	width 280px
+	margin-top -10.7em
+	margin-right 2em
+.calidad
+.servicios
+.satisfaccion
+	text-align center
+	width 310px
+	.iconos
+		color verde_principal
+		font-size 2em
+		&-servicio
+			color verde_principal
+			font-size 1.5em
+	.texto-servicios
+		text-align justify
+.playa
+	-moz-background-size: 		cover;
+	-o-background-size: 		cover;
+	-webkit-background-size: 	cover;
+	background url(../img/playa.png) 50% 0 no-repeat fixed
+	background-size: 			cover;
+	height: 					500px;
+	margin: 					0px auto;
+	max-height: 				150px;
+	max-width: 					1400px;
+	position: 					relative;
+	width: 						100%;
+.ruta
+	-moz-background-size: 		cover;
+	-o-background-size: 		cover;
+	-webkit-background-size: 	cover;
+	background url(../img/ruta.png) 50% 0 no-repeat fixed
+	background-size: 			cover;
+	height: 					500px;
+	margin: 					0px auto;
+	max-height: 				150px;
+	max-width: 					1400px;
+	position: 					relative;
+	width: 						100%;
+.promociones
+	padding-bottom 2em
+	.lista-promocion
+		background rojo_marron
+		color white
+		display inline-block
+		margin 0 5em 0 4.2em
+		overflow hidden
+		width 300px
+		.informacion-promo
+		.icono-promocion
+			display inline-block
+			margin-left 1em
+.titulo-promo
+	text-align center
+.titulos
+	color obscuro_claro
+	font-size 2em
+	text-align center
+	text-transform uppercase
+.figure-promo
+	width 300px
+	img
+		width 300px
+.icono-pago
+	font-size 2em
+	margin-bottom 0.1em
+	margin-right 0.1em
+	margin-top 0.5em
+.catalogo
+	background gris_claro
+	overflow hidden
+.info-estado
+	margin 0 auto
+	text-align center
+	width 500px
+	.estado
+		color obscuro_claro
+	.opciones-estados
+		border 2px gris_claro solid
+		border-radius 5px
+		padding 1em 2em
+		width 400px
+.contenedor-catalogo
+	margin-top 1em
+	text-align center
+	.img-estado
+		display inline-block
+		height 300px
+		margin-bottom 3em
+		margin-left	1em
+		position relative
+		width 400px
+		&:hover .mask
+			-moz-transition 0.5s
+			-ms-transition 0.5s
+			-o-transition 0.5s
+			-webkit-transition 0.5s
+			opacity 1				
+			transition 0.5s
+		.mask
+			background rgba(obscuro_claro,.3)
+			height 300px
+			left 0
+			opacity 0
+			position absolute
+			top 0
+			width 400px
+		.titulo-estado
+			color white
+			margin-top 3em
+		.boton-estado
+			background none
+			border 1px white solid
+			border-radius 5px
+			color white
+			margin-top 3em
+			padding 1em
+			&:hover				
+				-moz-transition 0.3s
+				-ms-transition 0.3s
+				-o-transition 0.3s
+				-webkit-transition 0.3s
+				background white
+				color obscuro_claro
+				transition 0.3s
+.viajes-ex
+	padding 0.5em 0
+.info-viajeros
+	color obscuro_claro
+	display inline-block
+	margin-left 2em
+	text-align center
+	vertical-align top
+	width 400px
+	.viajeros
+		height 200px
+		margin 0 auto
+		width 200px
+		img
+			border-radius 50%
+	.experiencia-viajero
+		font-size 1.1em
+.contactanos
+	background-image url(../img/bg_contactanos.png)
+	background-repeat no-repeat
+	background-size 100% 100%
+	overflow hidden
+	padding 4em 2em
+	position relative
+	.titulo-contactanos
+		color white
+		font-size 2.5em
+		text-transform uppercase
+		width auto
+		position absolute
+		top 4em
+		left 6em
+	.titulo-contactanos
+	.formulario-contactanos
+		display inline-block
+	.formulario-contactanos
+		border 1px verde_principal solid
+		border-radius 5px
+		// margin-left 10em
+		padding 2em 1em
+		width 380px
+		float right
+		font-size 1.1em
+		.etiqueta-formulario
+			color white
+		.campo-form
+			background form_obscuro
+			border 1px verde_principal solid
+			border-radius 5px
+			color white
+			height 40px
+			width 250px
+		.estilo-textarea
+			height 110px
+			resize none
+	.etiquetas
+	.campos
+		display inline-block
+		vertical-align middle
+	.etiquetas
+		margin-left 1em
+		width 100px
+	.separacion-formulario
+		margin 0 auto
+		margin-bottom 2em
+		padding-bottom 2em
+.centrar
+	margin 0 auto
+	width 350px
+	margin-top 1em
+	.submit-form
+		border 1px verde_principal solid
+		color verde_principal
+		background none
+		width 350px
+		height 40px
+		border-radius 5px
+		font-size 1.3em
+		margin 0 auto
+		transition 0.3s
+		-moz-transition 0.3s
+		-webkit-transition 0.3s
+		-o-transition 0.3s
+		-ms-transition 0.3s
+		&:hover
+			background verde_principal
+			color white	
+footer
+	background obscuro
+	overflow hidden
+	padding 1.5em 0
+	.alinear
+	.red-social
+		display inline-block
+	.separacion
+		&:nth-child(even)
+			.datosEmpresa-iconos
+				font-size .9em
+	.datosEmpresa
+	.info
+		display inline-block
+	.datosEmpresa
+		color white
+		margin-left 2em
+		font-size 1.2em
+		text-align center
+		width 50px
+		&-iconos
+			color verde_principal
+			text-align center
+		.informacionEmpresa
+			padding-left 2em
+	.info
+		color white
+		margin-left .2em
+					
+	.red-social
+		color verde_principal
+		font-size 2em
+		margin-right 3em
