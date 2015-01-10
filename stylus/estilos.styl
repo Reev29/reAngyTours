@@ -12,6 +12,8 @@ obscuro = #2a2a2a
 rojo_marron = #ee5625
 obscuro_claro = #323a45
 form_obscuro = #333333
+facebook = #3b5998
+twitter = #00aced
 
 a
 	text-decoration none
@@ -27,6 +29,8 @@ figure
 body
 	font-family 'angytours-bariol'
 	font-size 16px
+p
+	margin 0px
 		
 .cabecera
 	background-image url(../img/intro.png)
@@ -288,7 +292,6 @@ body
 	.formulario-contactanos
 		border 1px verde_principal solid
 		border-radius 5px
-		// margin-left 10em
 		padding 2em 1em
 		width 380px
 		float right
@@ -302,6 +305,7 @@ body
 			color white
 			height 40px
 			width 250px
+			padding-left 4px
 		.estilo-textarea
 			height 110px
 			resize none
@@ -336,7 +340,7 @@ body
 		-ms-transition 0.3s
 		&:hover
 			background verde_principal
-			color white	
+			color white
 footer
 	background obscuro
 	overflow hidden
@@ -370,3 +374,87 @@ footer
 		color verde_principal
 		font-size 2em
 		margin-right 3em
+//  CSS INICIO DE SESIÓN
+.bg-sesion
+	background-image url(../img/bg_sesion.png)
+	background-repeat no-repeat
+	background-size 100% 100%
+.caja-Inicio
+	background white
+	border-radius 5px
+	margin 0 auto
+	margin-bottom 1.8em
+	margin-top 1.8em
+	padding-bottom 2em
+	width 40%
+	.separacion-formulario
+		margin 2em 0 2em 0
+		.etiquetas
+		.campos
+			display inline-block
+		.etiquetas
+			width 150px
+			color verde_principal
+			font-size 1.5em
+		.campos
+			margin-left 0em
+			input
+				border verde_principal 1px solid
+				border-radius 5px
+				width 282px
+				height 30px
+				padding 5px
+.titulo-Inicio
+	background verde_principal
+	color white
+	text-align center
+	font-size 2.5em
+	border-radius 4px
+	padding .2em 0
+	position relative
+.triangulo
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid verde_principal;
+	content: "";
+	display: inline-block;
+	position absolute
+	right 41.5em
+.logo-Inicio
+	margin 0 auto
+	width 55px
+	height 80px
+	margin-top 1.5em
+.formulario-Inicio
+	width 450px
+	margin 0 auto
+.btn-login
+	border 0px
+	background verde_principal
+	color white
+	width 450px
+	padding .5em
+	font-size 1.5em
+	margin-bottom 0.5em
+.entrarSociales
+	margin 0 auto
+	width 500px
+	text-align center
+	color verde_principal
+	font-size 1.5em
+	margin-bottom 1em
+.socialFacebook
+.socialTwitter
+	color white
+	font-size 1.5em
+	display inline-block
+	width 200px
+	text-align center
+	padding .5em
+.socialFacebook
+	background facebook
+	margin-left 1.9em
+.socialTwitter
+	background twitter
+	margin-left -4px
+	
